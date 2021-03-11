@@ -1,10 +1,28 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+
+import { AppBody } from "./app.body";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <div className="app">
-      <h1>Slack Clone 2.0</h1>
+      <Router>
+        <>
+          <Header />
+          <AppBody>
+            <Sidebar />
+
+            <Switch>
+              <Route path="/" exact>
+                {/* <Chat /> */}
+              </Route>
+            </Switch>
+          </AppBody>
+        </>
+      </Router>
     </div>
   );
 }
