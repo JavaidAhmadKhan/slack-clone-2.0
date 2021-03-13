@@ -7,11 +7,7 @@ export const SidebarContainer = styled.div`
   border-top: 1px solid #49274b;
   max-width: 260px;
   margin-top: 60px;
-  overflow: scroll;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  overflow-y: scroll;
 
   > hr {
     margin-top: 10px;
