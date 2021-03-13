@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const AppBody = styled.div`
   display: flex;
   height: 100vh;
+
+  @media screen and (max-width: 800px) {
+  }
 `;
 export const AppLoading = styled.div`
   display: grid;

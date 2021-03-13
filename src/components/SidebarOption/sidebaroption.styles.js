@@ -7,6 +7,10 @@ export const SidebarOptionContainer = styled.div`
   padding-left: 2px;
   cursor: pointer;
 
+  @media screen and (max-width: 800px) {
+    font-size: 8px;
+  }
+
   :hover {
     opacity: 0.9;
     background-color: #340e36;

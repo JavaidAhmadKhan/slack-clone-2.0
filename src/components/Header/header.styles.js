@@ -12,6 +12,10 @@ export const HeaderSearch = styled.div`
   color: gray;
   border: 1px gray solid;
 
+  @media screen and (max-width: 800px) {
+    padding: 5px;
+  }
+
   > input {
     background-color: transparent;
     border: none;
@@ -19,6 +23,9 @@ export const HeaderSearch = styled.div`
     min-width: 30vw;
     outline: 0;
     color: white;
+  }
+  @media screen and (max-width: 800px) {
+    min-width: 50vw;
   }
 `;
 
@@ -38,9 +45,17 @@ export const HeaderLeft = styled.div`
   align-items: center;
   margin-left: 20px;
 
+  @media screen and (max-width: 800px) {
+    margin-left: 10px;
+  }
+
   > .MuiSvgIcon-root {
     margin-left: auto;
     margin-right: 30px;
+
+    @media screen and (max-width: 800px) {
+      margin-left: 8px;
+    }
   }
 `;
 
@@ -52,6 +67,10 @@ export const HeaderRight = styled.div`
   > .MuiSvgIcon-root {
     margin-left: auto;
     margin-right: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-left: 10px;
   }
 `;
 
